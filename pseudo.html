@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      body {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      h1::first-letter {
+        font-size: 150px;
+        color: crimson;
+      }
+      h1::first-line {
+        font-style: italic;
+      }
+      p::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: crimson;
+      }
+      p::after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 5px;
+        background-color: crimson;
+      }
+      p::selection {
+        color: coral;
+        background-color: #eee;
+      }
+
+      .anim {
+        width: 300px;
+        height: 300px;
+        background-color: sandybrown;
+        margin: 20px;
+        position: relative;
+        left: 30px;
+        border-radius: 100%;
+
+        transform: rotate(100deg) scale(0.5);
+      }
+
+      .anim2 {
+        width: 300px;
+        height: 300px;
+        background-color: salmon;
+        margin: 20px;
+        position: absolute;
+        bottom: 250px;
+        border-radius: 100%;
+        transform: rotate(-100deg) scale(0.5);
+      }
+
+      .anim:hover {
+        transform: rotate(-100deg) scale(1);
+      }
+
+      .anim3 {
+        opacity: 0.4;
+        width: 100px;
+        height: 100px;
+        background-color: deepskyblue;
+        margin: 20px;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out,
+          margin 1s ease-in;
+
+        /* property 
+          duration 
+          timing function
+          delay
+        */
+      }
+      .anim3:hover {
+        transform: rotate(180deg) scale(1.5);
+        opacity: 1;
+        margin-left: 50px;
+        /* transform: translateX(100px) scale(1.5); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem, ipsum dolor sit amet</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia eaque,
+      magnam ad voluptas quia similique totam porro libero earum placeat, quos
+      nisi ex accusantium quae illum reiciendis dicta minus ea!
+    </p>
+
+    <div class="anim"></div>
+    <div class="anim3"></div>
+    <div class="anim2"></div>
+  </body>
+</html>
