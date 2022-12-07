@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau</title>
+  </head>
+
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      /* background-color: #f1f1f1; */
+      height: 100vh;
+    }
+
+    .tbl {
+      border-collapse: collapse;
+      min-width: 400px; /* taille minimale*/
+      width: auto;
+      margin: 100px auto;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid #ddd;
+    }
+
+    thead tr {
+      background-color: midnightblue;
+      color: #fff;
+      text-align: left;
+    }
+
+    tr,
+    td {
+      padding: 15px 20px;
+    }
+    tbody tr,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #cfcfcf;
+    }
+
+    tbody tr:last-of-type {
+      border-bottom: 2px solid midnightblue;
+    }
+  </style>
+
+  <body>
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>Titre 1</th>
+          <th>Titre 2</th>
+          <th>Titre 3</th>
+          <th>Titre 4</th>
+          <th>Titre 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+        </tr>
+        <tr>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+        </tr>
+        <tr>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+        </tr>
+        <tr>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+          <td>Contenu</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced</title>
+  </head>
+
+  <style>
+    *,
+    ::before,
+    ::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f1f1f1;
+      height: 100vh;
+      /* background: linear-gradient(to right, #f1f2b5, #3498db); */
+      background: radial-gradient(#00bf8f, #001510);
+    }
+    img {
+      width: 500px;
+      /* filter: blur(2px); */
+      /* filter: contrast(250%); */
+      /* filter: saturate(250%); */
+      /* filter: grayscale(150%); */
+      /* filter: sepia(60%); */
+      /* filter: opacity(0.6); */
+      filter: grayscale(70%) drop-shadow(0px 20px 45px #fff);
+    }
+
+    h1 {
+      /* drop-shadow-> ombre sur chaque lettre */
+      /* bow-shadow-> ombre sur la box contenant le texte */
+
+      filter: drop-shadow(0px 20px 30px #fff);
+      font-size: 150px;
+    }
+  </style>
+
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt="pont dans la nature"
+    />
+    <br />
+    <h1>Let have fun with the filter properties !!!</h1>
+  </body>
+</html>
