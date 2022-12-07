@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shade outside</title>
+  </head>
+
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100vh;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 600px;
+      box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
+      padding: 38px;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: midnightblue;
+      background: url("https://images.unsplash.com/photo-1504296854541-06ce8cbb8755?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80");
+      background-size: cover;
+      background-position: -40px 0;
+      float: left;
+      margin: 0px 25px 25px 0px;
+      shape-outside: circle();
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <h1>Texte autour du cercle</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam,
+        ea debitis cum, id atque nostrum ullam doloribus tempore laboriosam
+        dolorum, maxime quos pariatur ab amet nam in suscipit exercitationem.
+        Veritatis, illo quidem, dignissimos aperiam dicta, ea praesentium cumque
+        maiores quibusdam perferendis rem. Deleniti, culpa repellendus tempora a
+        fugit possimus officiis obcaecati, quisquam, distinctio corrupti
+        aliquam? Nihil, veniam reiciendis? Blanditiis. Libero quod fugit officia
+        quaerat sequi eum suscipit odio quas. Officia, magnam fugiat. Facere
+        assumenda ducimus a dolore non unde maxime qui, minima, sit asperiores,
+        iste reiciendis minus harum voluptatum. Dolorum, repellat delectus
+        laboriosam perferendis maiores obcaecati consectetur culpa ullam quae
+        nam vitae quis odit dolorem voluptate distinctio aliquid sequi impedit
+        libero cumque labore doloribus dolores! Eligendi, autem. Nam, numquam.
+        Dolores, quaerat! Est voluptatem architecto, voluptatibus illo enim
+        debitis molestiae quis nobis laboriosam eum vitae officiis nihil neque
+        ad id similique. Distinctio quae necessitatibus accusantium, inventore
+        accusamus magnam quibusdam nam? In, amet ullam quis ut labore unde
+        magni. Excepturi incidunt ab deserunt natus odit. Eligendi magni sed
+        pariatur, sunt, quae dolorem consequuntur in inventore id animi maxime
+        totam, quisquam at. Molestiae deserunt quas odio tenetur doloremque
+        adipisci maxime incidunt asperiores blanditiis. At suscipit veniam
+        veritatis in mollitia velit ut ex amet impedit ipsum, fugiat ea possimus
+        maxime harum. Fugiat, fuga. Amet dignissimos ipsa nobis laboriosam
+        ducimus quam modi mollitia sequi. Dolor inventore quisquam possimus,
+        assumenda harum quaerat adipisci, eaque illum saepe qui enim distinctio
+        optio tempora ipsam, explicabo voluptas. Aspernatur! Facere quam aut
+        sequi, fugiat autem alias ex at excepturi iusto harum modi laboriosam
+        eaque eos non. Expedita, numquam eum praesentium nesciunt eveniet
+        reiciendis quasi sequi, placeat modi quas consequatur.
+      </p>
+    </div>
+  </body>
+</html>
