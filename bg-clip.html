@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bg-clip</title>
+  </head>
+
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-image: linear-gradient(to right, #1e130c, #9a8478);
+      -webkit-background-clip: text;
+      color: transparent; /* the color transparent for the text to take the bgImg color */
+      text-align: center;
+      letter-spacing: 4px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <body>
+    <h2>Découvrez vos valeurs</h2>
+  </body>
+</html>
