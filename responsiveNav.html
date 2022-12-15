@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+  </head>
+  <style>
+    *,
+    ::after,
+    ::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    nav {
+      height: 70px;
+      width: 100%;
+      background: #eee;
+    }
+
+    .list-item {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+    .item {
+      display: inline-block;
+      line-height: 70px;
+      font-size: 25px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .item a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .btn-toggle {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .btn-toggle img {
+      width: 40px;
+    }
+
+    @media screen and (max-width: 550px) {
+      .btn-toggle {
+        display: block;
+      }
+
+      .list-item {
+        display: none;
+      }
+
+      nav {
+        border-bottom: 1px solid #000;
+      }
+
+      .list-item.active {
+        display: block;
+        position: relative;
+        top: 70px;
+        background-color: #ddd;
+        height: auto;
+      }
+
+      .item {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <ul class="list-item">
+        <li class="item">
+          <a href="#">Accueil</a>
+        </li>
+        <li class="item">
+          <a href="#">Services</a>
+        </li>
+        <li class="item">
+          <a href="#">Tarifs</a>
+        </li>
+        <li class="item">
+          <a href="#">A propos</a>
+        </li>
+        <li class="item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+
+      <div class="btn-toggle" role="button">
+        <img src="./assets/images/menu.png" alt="icone hamburger " />
+      </div>
+    </nav>
+
+    <script src="navbar.js"></script>
+  </body>
+</html>
