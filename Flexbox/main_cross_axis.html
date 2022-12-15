@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      *,
+      ::after,
+      ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 60%;
+        height: 600px;
+        background-color: midnightblue;
+        display: flex;
+        /* ----> Position sur le main axis */
+        /* justify-content: center; */
+        /* ----> Position sur le cross axis */
+        /* align-items: center; */
+        /* flex-direction: column;
+
+        flex-wrap: wrap; */
+
+        /* ----> flex-flow: flex-wrap flex-direction */
+        flex-flow: wrap column;
+
+        align-content: space-evenly;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+        margin: 6px;
+        /* ---->flex: grow shrink basis */
+        /* flex: 0 1 150px; */
+        /* ---->0 no shrinkage/no grow; 1 for shrinkage/grow */
+        /* flex-shrink: 0; */
+      }
+
+      .item:nth-child(1) {
+        background-color: lightblue;
+        /* flex-grow: 1; */
+        /* margin-right: auto; */
+      }
+      .item:nth-child(2) {
+        background-color: salmon;
+        /* flex-grow: 2; */
+        /* align-self: center; */
+      }
+      .item:nth-child(3) {
+        background-color: lightgreen;
+        /* align-self: flex-end; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
