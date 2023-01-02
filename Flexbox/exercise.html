@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+  </head>
+  <style>
+    *,
+    ::after,
+    ::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .containerA {
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      height: 400px;
+      margin-top: 150px;
+      background-color: midnightblue;
+    }
+     
+    .itemA {
+      width: 150px;
+      height: 100px;
+      background-color: crimson;
+      margin: 2px 5px;
+    }
+
+    .a2 {
+      flex-grow: 1;
+    }
+
+    .containerB {
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      height: 400px;
+      margin-top: 150px;
+      background-color: midnightblue;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .itemB {
+      width: 300px;
+      height: 100px;
+      background-color: crimson;
+      margin:5px;
+    }
+
+    
+     .b3 {
+      width: 100%;
+    }
+    
+     .containerC {
+      display: flex;
+      width: 40%;
+      height: 600px;
+      margin-top: 150px;
+      background-color: midnightblue;
+      flex-shrink: 0;
+    }
+
+    .itemC {
+      width: 200px;
+      height: 200px;
+      background-color: crimson;
+      
+    }
+
+  
+    .c2{
+        margin: auto;
+    }
+    .c3{
+        margin-left: auto;
+        align-self: flex-end;
+    }
+
+    .containerD {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+         justify-content: center;
+      width: 40%;
+      height: 400px;
+      margin-top: 150px;
+      background-color: midnightblue;
+    }
+    
+    .itemD{
+        width: 50%;
+      height: 50px;
+      background-color: crimson;
+      margin:5px;
+    }
+  </style>
+  <body>
+    
+      <div class="containerA">
+        <div class="itemA a1"></div>
+        <div class="itemA a2"></div>
+        <div class="itemA a3"></div>
+      </div>
+
+      <div class="containerB">
+        <div class="itemB b1"></div>
+        <div class="itemB b2"></div>
+        <div class="itemB b3"></div>
+        <div class="itemB b4"></div>
+        <div class="itemB b5"></div>
+      </div>
+      <div class="containerC">
+        <div class="itemC c1"></div>
+        <div class="itemC c2"></div>
+        <div class="itemC c3"></div>
+      </div>
+     <div class="containerD">
+        <div class="itemD d1"></div>
+        <div class="itemD d2"></div>
+        <div class="itemD d3"></div>
+        <div class="itemD d4"></div>
+        <div class="itemD d5"></div>
+        <div class="itemD d6"></div>
+
+      </div>
+    </div>
+  </body>
+</html>
