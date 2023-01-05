@@ -1,3 +1,33 @@
-body{
-    background-color: red;
+@import "libs/reset.scss";
+
+body {
+  background-color: #000;
+  font-family: sans-serif;
+}
+
+.btn {
+  background-color: rgb(121, 172, 240);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(24, 38, 231);
+  }
+
+  .card & {
+    background-color: midnightblue;
+    color: white;
+    border: 1px solid #ddd;
+  }
+}
+
+.btn-danger {
+  @extend .btn;
+  background: crimson;
+  &:hover {
+    background: indianred;
+  }
 }
