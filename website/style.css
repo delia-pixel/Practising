@@ -128,5 +128,209 @@ h1{
 }
 
 .btn-accueil{
-    border;
+   background: crimson;
+   text-decoration: none;
+   color: #fff;
+   height: 70px;
+   width: 200px;
+    display: block;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 70px;
+    margin: 30px auto;
+    border: 1px solid #333;
+    transition: all 0.2s ease-in-out;
 }
+
+.btn-accueil:hover {
+    background: #fff;
+    color: crimson;
+}
+
+@media screen and (max-width:850px) {
+    .accueil h1 {
+        font-size: 60px;
+        
+    }
+
+    .sous-titre {
+        font-size: 23px;
+    }
+
+    .logo {
+        margin: 120px auto 0;
+    }
+
+    .accueil {
+        height: 650px;
+        min-height: auto;
+        background-position: right;
+    }
+
+    .btn-accueil {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        margin: 15px auto 0;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .accueil h1 {
+        font-size: 35px;
+    }
+
+    .sous-titre {
+        font-size: 20px;
+    }
+
+    .logo {
+        
+        width: 70px;
+        
+    } 
+
+    .accueil {
+        top: 15px;
+        height: 550px; 
+       
+    }
+
+    .btn-accueil {
+        width: 130px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+
+    }
+
+}
+
+/* Fin accueil */
+
+/* Section asymétrique */
+
+.section-asym{
+    display: grid;
+    grid-template: 200px repeat(3, auto) / 1fr 680px 1fr;
+    background: #f1f1f1;
+}
+
+.section-asym h2{
+    grid-area: 1 / 1 / 2 /-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+/*  Placement des éléments*/
+.bloc-1, .img-grid-1{
+   grid-area: 2 / 2 / 3 / 3;  
+}
+
+.bloc-right, .img-grid-2{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.bloc-3, .img-grid-3{
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.bloc{
+    background: #333;
+    color: #f1f1f1;
+    position: relative;
+    border-radius: 2px;
+    height: 750px;
+    margin-bottom: 250px;
+}
+
+.img-grid{
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+
+.img-grid-1, .img-grid-3{
+    top: 130px;
+    left: 20px;
+}
+
+.bloc-left{
+    left: -300px;
+}
+
+.bloc-txt-left{
+    width: 50%;
+    height: 100%;
+}
+
+.bloc-txt-left h3{
+    white-space: nowrap;
+    font-size: 35px;
+    margin: 30px 15px;
+}
+
+.bloc-txt-left p{
+    padding: 15px;
+    line-height: 40px;
+}
+
+.bloc button{
+    background: crimson;
+    color: #fff;
+    padding: 20px 35px;
+    display: block;
+    border-radius: 999px;
+    border: 1px solid #333;
+    margin: 35px auto;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bloc-right{
+        right: -300px;
+}
+
+.img-grid-2{
+    top: 130px;
+    left: 100px;
+}
+
+.bloc-txt-right{
+    position: absolute;
+    right: 0;
+    width: 50%; 
+    height: 100%;
+}
+
+.bloc-txt-right h3{
+    position: relative;
+    white-space: nowrap;
+    margin: 30px 0px;
+    font-size: 35px;
+}
+
+.bloc-txt-right p {
+    padding: 15px;
+    line-height: 40px;
+}
+
+/* LIgne verticale */
+ .ligne-gauche{
+    grid-area: 1 / 2 / -1 / 3;
+    border-left: 1px solid #333;
+ }
+
+  .ligne-droite {
+      grid-area: 1 / 3 / -1 / 4;
+      border-left: 1px solid #333;
+  }
