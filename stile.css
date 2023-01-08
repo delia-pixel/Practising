@@ -46,30 +46,54 @@ td, th {
 body {
   background-color: #000;
   font-family: sans-serif;
+  padding: 30px;
 }
 
-.btn, .btn-danger {
+.btn, .btn-mode, .btn-danger {
   background-color: rgb(121, 172, 240);
   color: white;
   border: none;
-  padding: 8px 20px;
+  text-align: center;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 15px;
+  display: block;
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
 }
-.btn:hover, .btn-danger:hover {
-  background-color: rgb(24, 38, 231);
+.btn:hover, .btn-mode:hover, .btn-danger:hover {
+  background-color: rgba(121, 172, 240, 0.7);
 }
-.card .btn, .card .btn-danger {
+.card .btn, .card .btn-mode, .card .btn-danger {
   background-color: midnightblue;
   color: white;
   border: 1px solid #ddd;
 }
 
 .btn-danger {
-  background: crimson;
+  background: black;
 }
 .btn-danger:hover {
-  background: indianred;
+  background: #ea1640;
+}
+
+.btn-mode {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.darkMode {
+  background: #333;
+  color: #f1f1f1;
+}
+
+@media only screen and (min-width:850px) {
+  body {
+    background: #fff;
+  }
+  .btn, .btn-danger, .btn-mode {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=stile.css.map */
