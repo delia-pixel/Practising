@@ -161,7 +161,7 @@ span {
   padding: 0px 0px 30px 0px;
 }
 
-.entete h2 {
+.title2 {
   font-weight: bold;
   font-size: 48px;
   color: #ffffff;
@@ -216,8 +216,53 @@ span {
   }
 }
 
+.sec-channel {
+  background: #fbfbff;
+  padding-top: 5px;
+}
 .channel {
-  margin-top: 4%;
-  width: 100%;
+  margin: 4% auto;
+  width: 80%;
   height: 700px;
+  display: flex;
+}
+.chan {
+  width: 50%;
+}
+
+.txt-chan {
+  background: #eeeffd;
+  color: #505ae9;
+}
+.chan h2 {
+  @extend .title2;
+  color: rgba(16, 21, 97, 1);
+}
+
+.chan p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  width: 500px;
+  color: rgba(111, 115, 160, 1);
+  margin-top: 28px;
+}
+
+.channel-card {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  margin-top: 40px;
+}
+
+.card2 {
+  width: 220px;
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.card2 p {
+  width: 195px;
 }
