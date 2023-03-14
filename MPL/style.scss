@@ -223,7 +223,7 @@ span {
 .channel {
   margin: 4% auto;
   width: 80%;
-  height: 700px;
+  height: auto;
   display: flex;
 }
 .chan {
@@ -253,16 +253,82 @@ span {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .card2 {
-  width: 220px;
+  width: 230px;
   height: auto;
   background: #fff;
   border-radius: 8px;
+  padding: 20px 15px;
+  margin: 0px 20px 20px 0px;
 }
 
 .card2 p {
-  width: 195px;
+  width: 160px;
+  margin-top: 12px;
+  text-align: start;
+}
+
+.card2 h3 {
+  color: rgba(63, 68, 129, 1);
+}
+
+.card-ico {
+  display: block;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  bottom: 30px;
+  right: 32px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  height: auto;
+  // margin-top: 160px;
+  padding: 25px 15px;
+}
+
+.testi-slides {
+  margin: 4% auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.test {
+  color: #fb8b24;
+  background: rgba(251, 139, 36, 0.1);
+}
+
+.big-orange {
+  width: 466px;
+  height: 336px;
+  background: #fff7e5;
+  border-radius: 146px 78px 168px 168px;
+}
+
+.testimonial-txt {
+  width: 50%;
+  p {
+    width: 400px;
+    position: absolute;
+    margin-top: 2%;
+  }
+}
+
+.testimonial-img {
+  width: 250px;
+  height: 375px;
+  left: 849px;
+  background: url("assets/images/testimony.jpeg") #d9d9d9;
+  border-radius: 146px 78px 147px 147px;
+  background-position: center;
+  background-size: contain;
 }
